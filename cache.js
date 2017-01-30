@@ -24,14 +24,14 @@ var MemoryStore = require('./memory').MemoryStore;
 var utils = require('./lookup');
 var Lookup = utils.Lookup;
 var util = require('util');
-var Heap = require('binaryheap');
+var Heap = require('heap');
 
 var MemoryStoreExpire = function (store, zone, opts) {
   opts = opts || {};
   this._store = store;
   this._zone = zone;
   this._max_keys = opts.max_keys;
-  this._ttl = new Heap(true);
+  this._ttl = new Heap();
 };
 
 MemoryStoreExpire.prototype.get = function (domain, key, cb) {

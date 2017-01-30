@@ -3,7 +3,10 @@
   "version": "0.0.2",
   "author": "Timothy J Fontaine <tjfontaine@gmail.com> (http://atxconsulting.com)",
   "description": "DNS Caching Library",
-  "keywords": [ "dns", "caching" ],
+  "keywords": [
+    "dns",
+    "caching"
+  ],
   "homepage": "http://github.com/tjfontaine/native-dns-cache",
   "bugs": {
     "url": "http://github.com/tjfontaine/native-dns-cache/issues"
@@ -16,12 +19,10 @@
   "engines": {
     "node": ">= 0.5.0"
   },
-  "scripts": {
-  },
+  "scripts": {},
   "dependencies": {
-    "binaryheap": ">= 0.0.3",
+    "heap": "^0.2.6",
     "native-dns-packet": ">= 0.0.1"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
